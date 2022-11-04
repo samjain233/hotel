@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/admin/hoteldetail.css">
+</head>
+
+<body>
+    <div id="details">
+        <div class="container">
+            <div class="details">
+                <div class="formbody">
+                    <div class="form-head">
+                        <p>HOTEL DETAILS</p>
+                    </div>
+                    <div class="formBx">
+                        <input type="text" placeholder="Hotel Name" name="hotelName" required="true" id="hotelName">
+                        <input type="text" placeholder="Address" name="Address" required="true" id="Address">
+                        <input type="text" placeholder="Contact Number" name="contact" required="true" id="contact">
+                        <button id="dsave" onclick="dsave()">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div class="imagebox">
+                <img class="img"
+                    src="https://images.unsplash.com/photo-1629140727571-9b5c6f6267b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="" />
+            </div>
+        </div>
+    </div>
+
+    <!-- normal rooms details  -->
+    <div hidden id="ndetails">
+        <div class="container">
+            <div class="details">
+                <div class="formbody">
+                    <div class="form-head">
+                        <p>ORDINARY ROOM DETAILS</p>
+                    </div>
+                    <div class="formBx">
+                        <input type="text" placeholder="Room Name" name="roomName" id="nroomName">
+                        <input type="text" placeholder="Total Rooms" name="TORooms" required="true" id="nRooms">
+                        <input type="text" placeholder="Price" name="price" required="true" id="nprice">
+                        <input type="text" placeholder="description of the rooms" name="ordinaryDescription" id="ndesc">
+                        <!-- <label for="rts">Yes</label>
+                        <input type="radio" name="isHumanAllowed" value="true" id="rts">
+                        <label for="rts">No</label>
+                        <input type="radio" name="isHumanAllowed" value="false" checked id="rts"> -->
+
+                        <button onclick="nsave()" id="nsave">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div class="imagebox">
+                <img class="img"
+                    src="https://images.unsplash.com/photo-1518733057094-95b53143d2a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="" />
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Vip rooms details  -->
+    <div hidden id="vdetails">
+        <div class="container">
+            <div class="details">
+                <div class="formbody">
+                    <div class="form-head">
+                        <p>LUXURY ROOM DETAILS</p>
+                    </div>
+                    <div class="formBx">
+                        <input type="text" placeholder="Room Name" name="roomName" id="vroomName">
+                        <input type="text" placeholder="Total Rooms" name="TORooms" required="true" id="vrooms">
+                        <input type="text" placeholder="Price" name="price" required="true" id="vprice">
+                        <input type="text" placeholder="description of the rooms" name="ordinaryDescription" id="vdesc">
+                        <!-- <label for="rts">Yes</label>
+                        <input type="radio" name="isHumanAllowed" value="true" id="rts">
+                        <label for="rts">No</label>
+                        <input type="radio" name="isHumanAllowed" value="false" checked id="rts"> -->
+
+                        <button id="vsave" onclick="vsave()">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div class="imagebox">
+                <img class="img"
+                    src="https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="" />
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/admin/hoteldetail.js"></script>
+
+</body>
+
+</html>
